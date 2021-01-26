@@ -1,0 +1,95 @@
+.page-header {
+  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #0b0d19 0%,
+    #0b0d19 88.62%,
+    rgba(11, 13, 25, 0) 100%
+  );
+}
+.logo-image {
+  margin-right: 21px;
+}
+.logo-title-img,
+.logo-subtitle-img {
+  width: 135px;
+  height: 28px;
+  fill: #d9d9d9;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 128px;
+}
+.header__list {
+  display: flex;
+
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+.header__element {
+  color: #d9d9d9;
+}
+.header__element:not(:last-child) {
+  margin-right: 34px;
+}
+.header {
+  margin-right: 393px;
+}
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-svg-calculator {
+  width: 14px;
+  height: 14px;
+  stroke: #ab78ff;
+}
+.nav-btn-calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 48px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-image: linear-gradient(343.22deg, #181932 -36.39%, #0f111e 72.73%);
+  box-shadow: -14px -28px 30px rgba(35, 33, 58, 0.35),
+    14px 28px 30px rgba(4, 5, 14, 0.3);
+}
+.nav-btn-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ab78ff;
+  width: 189px;
+  height: 48px;
+  background: linear-gradient(343.22deg, #181932 -36.39%, #0f111e 72.73%);
+  /* Button/1 */
+
+  box-shadow: -14px -28px 30px rgba(35, 33, 58, 0.35),
+    14px 28px 30px rgba(4, 5, 14, 0.3);
+  border-radius: 60px;
+}
+.header__element-title {
+  margin: 0;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+  transition: color 100ms ease-in-out;
+}
+.header__element-title:hover,
+.header__element-title:focus {
+  color: #ab78ff;
+}
