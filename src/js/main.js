@@ -1,6 +1,7 @@
 const refs = {
   offers: document.querySelector(".header__list"),
   offersSlider: document.querySelector(".header__slider.offer"),
+  portfolioSlider: document.querySelector(".header__slider.portfolio"),
   offersArrow: document.querySelector(".header__arrow.offer"),
   portfolioArrow: document.querySelector(".header__arrow.portfolio"),
   payArrow: document.querySelector(".header__arrow.pay"),
@@ -17,7 +18,7 @@ function onShowOffers(e) {
     refs.offersArrow.classList.toggle("hidden");
   }
   if (e.target.classList.contains("portfolio")) {
-    refs.offersSlider.classList.toggle("is-open");
+    refs.portfolioSlider.classList.toggle("is-open");
     refs.portfolioArrow.classList.toggle("hidden");
   }
   if (e.target.classList.contains("pay")) {

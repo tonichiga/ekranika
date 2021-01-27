@@ -1,5 +1,6 @@
 .page-header {
   width: 100%;
+  // padding: 0;
 }
 .logo-image {
   margin-right: 21px;
@@ -13,16 +14,16 @@
 .wrapper {
   position: relative;
   display: flex;
-  justify-content: center;
+  // justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
-  padding-left: 95px;
-  padding-right: 95px;
+  // padding-left: 95px;
+  // padding-right: 95px;
 }
 .logo-wrapper {
   display: flex;
   align-items: center;
-  margin-right: 163px;
+  margin-right: 118px;
 }
 .header__list {
   display: flex;
@@ -35,10 +36,10 @@
   color: #d9d9d9;
 }
 .header__element:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 .header {
-  margin-right: 270px;
+  margin-right: 225px;
 }
 .nav-btn {
   display: flex;
