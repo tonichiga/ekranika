@@ -344,10 +344,6 @@ template {
   padding-right: 95px;
 }
 
-.page-header {
-  width: 100%;
-}
-
 .logo-image {
   margin-right: 21px;
 }
@@ -483,6 +479,11 @@ template {
   font-size: 14px;
   line-height: 22px;
   text-decoration: none;
+}
+
+.header__slider-link:hover,
+.header__slider-link:focus {
+  color: #ab78ff;
 }
 
 body {
@@ -672,6 +673,7 @@ li {
 }
 
 .header__slider-title {
+  text-decoration: none;
   font-size: 18px;
   line-height: 29px;
   color: #d9d9d9;
@@ -688,6 +690,8 @@ li {
 }
 
 .header__slider-list {
+  display: flex;
+  justify-content: center;
   width: 200px;
 }
 
@@ -708,10 +712,10 @@ li {
 }
 
 .header__slider-line.second {
-  transform: translateX(-250px);
+  transform: translateX(-211px);
 }
 
-.header__slider.portfolio {
-  height: 500px;
+.header__slider.about-us {
+  height: 380px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .page-header {
-  width: 100%;
+  // width: 100%;
   // padding: 0;
 }
 .logo-image {
@@ -130,4 +130,8 @@
   font-size: 14px;
   line-height: 22px;
   text-decoration: none;
+}
+.header__slider-link:hover,
+.header__slider-link:focus {
+  color: #ab78ff;
 }

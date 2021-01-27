@@ -1,7 +1,7 @@
 const refs = {
   offers: document.querySelector(".header__list"),
   offersSlider: document.querySelector(".header__slider.offer"),
-  portfolioSlider: document.querySelector(".header__slider.portfolio"),
+  aboutUsSlider: document.querySelector(".header__slider.about-us"),
   offersArrow: document.querySelector(".header__arrow.offer"),
   portfolioArrow: document.querySelector(".header__arrow.portfolio"),
   payArrow: document.querySelector(".header__arrow.pay"),
@@ -17,21 +17,21 @@ function onShowOffers(e) {
     refs.offersSlider.classList.toggle("is-open");
     refs.offersArrow.classList.toggle("hidden");
   }
-  if (e.target.classList.contains("portfolio")) {
-    refs.portfolioSlider.classList.toggle("is-open");
-    refs.portfolioArrow.classList.toggle("hidden");
+  if (e.target.classList.contains("about-us")) {
+    refs.aboutUsSlider.classList.toggle("is-open");
+    refs.aboutUsSlider.classList.toggle("hidden");
   }
   if (e.target.classList.contains("pay")) {
-    refs.offersSlider.classList.toggle("is-open");
+    refs.aboutUsSlider.classList.toggle("is-open");
     refs.payArrow.classList.toggle("hidden");
   }
   if (e.target.classList.contains("wiki")) {
     refs.offersSlider.classList.toggle("is-open");
     refs.wikiArrow.classList.toggle("hidden");
   }
-  if (e.target.classList.contains("about-us")) {
+  if (e.target.classList.contains("portfolio")) {
     refs.offersSlider.classList.toggle("is-open");
-    refs.aboutUsArrow.classList.toggle("hidden");
+    refs.portfolioArrow.classList.toggle("hidden");
   }
   if (e.target.classList.contains("contact")) {
     refs.offersSlider.classList.toggle("is-open");
