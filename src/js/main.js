@@ -8,6 +8,7 @@ const refs = {
   wikiArrow: document.querySelector(".header__arrow.wiki"),
   aboutUsArrow: document.querySelector(".header__arrow.about-us"),
   contactArrow: document.querySelector(".header__arrow.contact"),
+  deliveryLink: document.querySelector(".header__slider-title.delivery"),
 };
 refs.offers.addEventListener("click", onShowOffers);
 function onShowOffers(e) {
@@ -36,5 +37,12 @@ function onShowOffers(e) {
   if (e.target.classList.contains("contact")) {
     refs.offersSlider.classList.toggle("is-open");
     refs.contactArrow.classList.toggle("hidden");
+  }
+}
+
+refs.deliveryLink.addEventListener("click", onDeliveryPage);
+function onDeliveryPage(e) {
+  if (e.target.classList.contains("delivery")) {
+    document.location.href = "./delivery.html";
   }
 }
