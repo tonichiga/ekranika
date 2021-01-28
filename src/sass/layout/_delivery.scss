@@ -1,0 +1,223 @@
+.main__wrapper.delivery-section {
+  display: block;
+  padding-top: 96px;
+}
+
+.delivery-main {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 96px;
+  padding-bottom: 100px;
+  padding-right: 92px;
+  padding-left: 92px;
+  margin-bottom: 272px;
+  background: #0b0d19;
+  box-shadow: -14px -14px 30px rgba(35, 33, 58, 0.35),
+    16px 5px 40px rgba(4, 5, 14, 0.6);
+  border-radius: 12px;
+}
+
+.delivery__wrapper {
+  margin-right: 144px;
+  width: 480px;
+}
+.delivery__title-main {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 84px;
+  color: #d9d9d9;
+  letter-spacing: 0.02em;
+}
+.delivery__subtitle-main {
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #a3a3a3;
+}
+.delivery-way__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 720px;
+}
+.delivery__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #a3a3a3;
+}
+.delivery__subtitle {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: rgba(163, 163, 163, 1);
+}
+.pay-section {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 192px;
+  padding-right: 192px;
+  background-color: #0b0d19;
+  box-shadow: -14px -14px 30px rgba(35, 33, 58, 0.35),
+    16px 5px 40px rgba(4, 5, 14, 0.6);
+  border-radius: 12px;
+}
+.pay__wrapper-calc {
+  width: 700px;
+}
+.pay__wrapper-info {
+  width: 487px;
+  margin-right: 137px;
+}
+.pay__wrapper-calc {
+  padding: 68px;
+  background-color: #0b0d19;
+  box-shadow: -14px -14px 30px rgba(35, 33, 58, 0.35),
+    16px 5px 40px rgba(4, 5, 14, 0.6);
+  border-radius: 12px;
+}
+.pay__title {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 84px;
+  letter-spacing: 0.02em;
+  color: #d9d9d9;
+}
+.pay__subtitle {
+  margin-top: 0;
+  margin-bottom: 68px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #a3a3a3;
+}
+.pay__download-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #f6f0ff;
+}
+.pay__nds-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #a3a3a3;
+}
+.pay__calc-title {
+  margin-top: 0;
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #a3a3a3;
+}
+.pay__calc-cost,
+.pay__calc-date,
+.pay__calc-first {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a3a3a3;
+}
+.pay__calc-cost,
+.pay__calc-date {
+  margin-bottom: 34px;
+}
+.pay__calc-first {
+  margin-bottom: 48px;
+}
+.pay__calc-list {
+  margin: 0;
+  padding: 0;
+}
+.pay__calc-first-list {
+  margin: 0;
+  padding: 0;
+}
+.pay__calc-element-title,
+.pay__calc-element-first-title {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ab78ff;
+}
+.pay__btn-calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 34px;
+  width: 141px;
+  height: 46px;
+  background-color: #ab78ff;
+  border: 2px solid #ab78ff;
+  filter: drop-shadow(-14px -28px 30px rgba(35, 33, 58, 0.35)),
+    drop-shadow(14px 28px 30px rgba(4, 5, 14, 0.3));
+  border-radius: 120px;
+
+  cursor: pointer;
+}
+.pay__btn-calc:active {
+  box-shadow: inset 5px 4px 10px rgba(49, 4, 38, 0.5),
+    inset -2px -2px 30px rgba(255, 255, 255, 0.2);
+  border-radius: 60px;
+
+  border: 2px solid #ab78ff;
+}
+.pay__btn-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #d9d9d9;
+}
+.pay__line {
+  display: flex;
+  margin-bottom: 34px;
+  height: 12px;
+  width: 584px;
+  background-color: #0b0d19;
+  box-shadow: inset -2px -2px 5px rgba(52, 40, 62, 0.3),
+    inset 2px 2px 5px rgba(0, 2, 12, 0.8),
+    -20px -27px 40px rgba(35, 33, 58, 0.35), 20px 27px 40px rgba(4, 5, 14, 0.17);
+}
+.pay__total {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #ab78ff;
+}
+
+.pay__total-overpay,
+.pay__total-first-pay {
+  margin: 0;
+  font-size: 18px;
+  line-height: 160%;
+  color: #a3a3a3;
+}
+.pay__total-overpay {
+  margin-bottom: 16px;
+}
