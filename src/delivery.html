@@ -427,11 +427,16 @@
                 </p>
               </div>
               <div class="helper__textarea-wrapper">
-                <p class="helper__textarea-title">Комментарий</p>
+                <label for="textarea" class="helper__textarea-title"
+                  >Комментарий</label
+                >
+                <svg class="textarea-icon">
+                  <use href="./images/logo/sprite.svg#textarea-icon"></use>
+                </svg>
                 <textarea
                   class="helper__textarea"
                   name=""
-                  id=""
+                  id="textarea"
                   cols="30"
                   rows="10"
                   placeholder="Напишите нам что-нибудь"
@@ -439,7 +444,7 @@
                 <div class="helper__personal-data">
                   <label class="helper__form-label" for="checkbox">
                     <input
-                      class="helper__form-checkbox"
+                      id="helper__form-checkbox"
                       type="checkbox"
                       id="checkbox"
                       name="policy"
@@ -451,12 +456,13 @@
                       >
                     </span>
                   </label>
-                  <svg>
+                  <!-- <svg>
+                    2
                     <use href="./images/logo/sprite.svg#checked"></use>
                   </svg>
                   <svg>
-                    <use href="./images/logo/sprite.svg#checkbox-on"></use>
-                  </svg>
+                    <use href="./images/logo/sprite.svg#on"></use>
+                  </svg> -->
                   <button class="helper__btn-qs" type="button">
                     Следующий вопрос
                   </button>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1018,6 +1019,9 @@ a {
 }
 
 .helper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-top: 256px;
   padding-left: 192px;
   padding-right: 192px;
@@ -1045,6 +1049,7 @@ a {
 .helper__input-title-name,
 .helper__input-title-number,
 .helper__textarea-title {
+  position: relative;
   display: block;
   margin: 0;
   margin-bottom: 12px;
@@ -1055,9 +1060,15 @@ a {
 
 #name,
 #tel {
+  padding-left: 92px;
+  color: #a3a3a3;
   width: 622px;
   height: 80px;
   border: none;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #80758f;
   background-color: #0b0d19;
   box-shadow: -10px -10px 30px rgba(35, 33, 58, 0.35), 10px 10px 30px rgba(4, 5, 14, 0.55), inset -5px -6px 20px rgba(35, 33, 58, 0.3), inset 5px 6px 20px rgba(0, 2, 12, 0.5);
   border-radius: 120px;
@@ -1088,6 +1099,13 @@ a {
 }
 
 .helper__textarea {
+  position: relative;
+  padding-left: 92px;
+  padding-top: 12px;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #80758f;
   width: 531px;
   height: 253px;
   margin-bottom: 48px;
@@ -1096,6 +1114,30 @@ a {
   border: none;
   box-shadow: -10px -10px 30px rgba(35, 33, 58, 0.35), 10px 10px 30px rgba(4, 5, 14, 0.55), inset -5px -6px 20px rgba(35, 33, 58, 0.3), inset 5px 6px 20px rgba(0, 2, 12, 0.5);
   border-radius: 24px;
+}
+
+.helper__textarea-wrapper {
+  position: relative;
+}
+
+.textarea-icon {
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  left: 8px;
+  width: 87px;
+  height: 44px;
+  background-image: url(../images/logo/textarea-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.textarea-icon::after {
+  content: "";
+  position: absolute;
+  box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.48), -14px -28px 30px rgba(35, 33, 58, 0.15), 14px 28px 30px rgba(4, 5, 14, 0.3), -6px -6px 30px rgba(35, 33, 58, 0.15), 6px 6px 30px rgba(0, 2, 12, 0.3);
+  border-radius: 26px;
 }
 
 .helper__textarea:placeholder-shown {
@@ -1131,7 +1173,6 @@ a {
   font-size: 14px;
   line-height: 22px;
   color: #a3a3a3;
-  margin-right: 38px;
 }
 
 .helper__form-title-link {
@@ -1147,29 +1188,64 @@ a {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  margin-right: 25px;
 }
 
-.helper__form-checkbox {
-  margin-right: 12px;
+#helper__form-checkbox {
+  margin-right: 15px;
+  position: relative;
+}
+
+#helper__form-checkbox::after {
+  content: "";
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/logo/rectangle-40.svg);
+  z-index: 101;
 }
 
-.helper__form-checkbox:checked {
-  background-color: #fff;
-  box-shadow: inset -1px -1px 2px rgba(35, 33, 58, 0.3), inset 1px 1px 5px rgba(0, 2, 12, 0.8);
-  border-radius: 2px;
-  background: #0b0d19;
-  /* F/out2 */
+#helper__form-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/logo/Path.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 100;
+}
+
+#helper__form-checkbox.checked::before {
+  z-index: 102;
   box-shadow: -12px -10px 30px #23213a, 12px 10px 30px rgba(0, 2, 12, 0.5);
+  border-radius: 2px;
+}
+
+#tool {
+  width: 200px;
+  height: 100px;
+  background: orange;
+  margin: 25px;
+}
+
+#tool:after {
+  content: "Я псевдо-элемент after";
+  display: block;
+  width: 100%;
+  height: 20px;
+  background: #0ff;
+}
+
+#tool.tool:after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin: 25px;
+  background: #0ff;
 }
 /*# sourceMappingURL=main.css.map */

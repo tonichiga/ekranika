@@ -35,26 +35,36 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 11.25L11.397 9L7.5 6.75V11.25Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12.378 1.25H5.625C3.20897 1.25 1.25 3.20897 1.25 5.625V12.378C1.25 14.7925 3.20747 16.75 5.622 16.75H12.378C14.7924 16.75 16.75 14.7927 16.75 12.3787V5.622C16.75 3.20747 14.7925 1.25 12.378 1.25Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+
 <symbol  viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
 <g opacity="0.9">
 <path d="M3.42857 3.6001L8 8.4001L12.5714 3.6001" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </symbol>
-<symbol width="68" height="66" viewBox="0 0 68 66" fill="none" xmlns="http://www.w3.org/2000/svg" id="checked">
-<rect x="26.5" y="25.5" width="15" height="15" rx="3.5" fill="#241838" stroke="#382359"/>
-<g filter="url(#filter0_d)">
-<path d="M31 32.3333L33.4 35L37 31" stroke="#AB78FF" stroke-linecap="round" stroke-linejoin="round"/>
+
+<symbol width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" id="textarea-icon">
+<g filter="url(#filter0_ii)">
+<rect width="22" height="22" rx="2" fill="#AB78FF"/>
 </g>
 <defs>
-<filter id="filter0_d" x="0.5" y="0.5" width="67" height="65" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_ii" x="-1" y="-1" width="24" height="24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="15"/>
-<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.56 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="1" dy="1"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.00654762 0 0 0 0 0.0458333 0 0 0 0.8 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-1" dy="-1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.137255 0 0 0 0 0.129412 0 0 0 0 0.227451 0 0 0 0.3 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow" result="effect2_innerShadow"/>
 </filter>
 </defs>
 </symbol>
+
+
 </svg>

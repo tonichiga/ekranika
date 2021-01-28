@@ -9,6 +9,7 @@ const refs = {
   aboutUsArrow: document.querySelector(".header__arrow.about-us"),
   contactArrow: document.querySelector(".header__arrow.contact"),
   deliveryLink: document.querySelector(".header__slider-title.delivery"),
+  checkbox: document.querySelector("#helper__form-checkbox"),
 };
 refs.offers.addEventListener("click", onShowOffers);
 function onShowOffers(e) {
@@ -45,4 +46,8 @@ function onDeliveryPage(e) {
   if (e.target.classList.contains("delivery")) {
     document.location.href = "./delivery.html";
   }
+}
+refs.checkbox.addEventListener("click", onChecked);
+function onChecked(e) {
+  refs.checkbox.classList.toggle("checked");
 }
