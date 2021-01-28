@@ -370,8 +370,35 @@
               <label for="cost" class="pay__calc-cost"
                 >Стоимость оборудования</label
               >
-              <p class="pay__calc-date">Срок рассрочки</p>
-              <ul class="pay__calc-list">
+              <div class="select-form__wrapper">
+                <p class="pay__calc-date">Срок рассрочки</p>
+                <div class="custom-select">
+                  <select>
+                    <option value="1">36</option>
+                    <option value="2">36</option>
+                    <option value="3">24</option>
+                    <option value="4">12</option>
+                    <option value="5">6</option>
+                  </select>
+                  <!-- <div class="select-selected select-arrow-active">36</div> -->
+                  <!-- <div class="select-items select-hide">
+                    <div>36</div>
+                    <div>24</div>
+                    <div>12</div>
+                    <div>6</div>
+                  </div> -->
+                </div>
+              </div>
+
+              <div class="form-radio-btn percent">
+                <p class="pay__calc-first">Первый расчет</p>
+                <select>
+                  <option value="0">30%</option>
+                  <option value="1">50%</option>
+                  <option value="2">70%</option>
+                </select>
+              </div>
+              <!-- <ul class="pay__calc-list">
                 <li class="pay__calc-element">
                   <span class="pay__calc-element-title">24</span>
                 </li>
@@ -381,9 +408,8 @@
                 <li class="pay__calc-element">
                   <span class="pay__calc-element-title">6</span>
                 </li>
-              </ul>
-              <p class="pay__calc-first">Первый расчет</p>
-              <ul class="pay__calc-first-list">
+              </ul> -->
+              <!-- <ul class="pay__calc-first-list">
                 <li class="pay__calc-element-first">
                   <span class="pay__calc-element-first-title">30%</span>
                 </li>
@@ -393,7 +419,7 @@
                 <li class="pay__calc-element-first">
                   <span class="pay__calc-element-first-title">70%</span>
                 </li>
-              </ul>
+              </ul> -->
               <span class="pay__btn-calc"
                 ><span class="pay__btn-title">Рассчитать</span></span
               >
@@ -415,10 +441,12 @@
                 <label class="helper__input-title-name" for="name"
                   >Как вас зовут?</label
                 >
+                <span class="name-icon"> </span>
                 <input type="text" id="name" placeholder="Константин Фролов" />
                 <label class="helper__input-title-number" for="tel"
                   >Номер телефона</label
                 >
+                <span class="tel-icon"> </span>
                 <input type="text" id="tel" placeholder="+7 9ХХ-ХХХ-ХХ-ХХ" />
                 <p class="helper__subtitle">
                   Перезвоним в ближайшее время и расскажем обо всех особенностях
@@ -430,9 +458,7 @@
                 <label for="textarea" class="helper__textarea-title"
                   >Комментарий</label
                 >
-                <svg class="textarea-icon">
-                  <use href="./images/logo/sprite.svg#textarea-icon"></use>
-                </svg>
+                <span class="textarea-icon"> </span>
                 <textarea
                   class="helper__textarea"
                   name=""

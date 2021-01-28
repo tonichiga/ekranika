@@ -146,6 +146,9 @@
 .pay__calc-date {
   margin-bottom: 34px;
 }
+.pay__calc-date {
+  margin-right: 34px;
+}
 .pay__calc-first {
   margin-bottom: 48px;
 }
@@ -220,4 +223,25 @@
 }
 .pay__total-overpay {
   margin-bottom: 16px;
+}
+.pay__list-element {
+  position: relative;
+}
+.pay__calc-first-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.pay__calc-first-list:hover {
+  opacity: 1;
+}
+.pay__calc-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.pay__calc-list:hover {
+  opacity: 1;
 }
