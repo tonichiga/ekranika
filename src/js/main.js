@@ -15,6 +15,7 @@ refs.offers.addEventListener("click", onShowOffers);
 function onShowOffers(e) {
   e.preventDefault();
   console.log();
+
   if (e.target.classList.contains("offer")) {
     refs.offersSlider.classList.toggle("is-open");
     refs.offersArrow.classList.toggle("hidden");

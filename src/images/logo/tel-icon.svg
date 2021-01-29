@@ -1,6 +1,6 @@
 <svg  viewBox="0 0 124 156" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_ddddd)">
-<path d="M78 96C78 87.7157 70.8366 81 62 81C53.1634 81 46 87.7157 46 96M58.1436 75H65.8564C69.0285 75 71.6 72.5892 71.6 69.6154V69C71.6 64.0294 67.3019 60 62 60C56.6981 60 52.4 64.0294 52.4 69V69.6154C52.4 72.5892 54.9715 75 58.1436 75Z" stroke="#F6F0FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M78 96C78 87.7157 70.8366 81 62 81C53.1634 81 46 87.7157 46 96M58.1436 75H65.8564C69.0285 75 71.6 72.5892 71.6 69.6154V69C71.6 64.0294 67.3019 60 62 60C56.6981 60 52.4 64.0294 52.4 69V69.6154C52.4 72.5892 54.9715 75 58.1436 75Z" stroke="#f6f0ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
 <filter id="filter0_ddddd" x="0.5" y="0.5"  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

@@ -9,7 +9,7 @@
 .logo-subtitle-img {
   width: 135px;
   height: 28px;
-  fill: #d9d9d9;
+  fill: $text-primary;
 }
 .wrapper {
   position: relative;
@@ -33,7 +33,7 @@
   padding: 0;
 }
 .header__element {
-  color: #d9d9d9;
+  color: $text-primary;
 }
 .header__element:not(:last-child) {
   margin-right: 20px;
@@ -49,7 +49,7 @@
 .nav-svg-calculator {
   width: 14px;
   height: 14px;
-  stroke: #ab78ff;
+  stroke: $accent-color;
 }
 .nav-btn-calc {
   display: flex;
@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ab78ff;
+  color: $accent-color;
   width: 189px;
   height: 48px;
   cursor: pointer;
@@ -83,7 +83,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #d9d9d9;
+  color: $text-primary;
   margin: 0;
   padding-top: 46px;
   padding-bottom: 46px;
@@ -96,10 +96,10 @@
 }
 .header__element-title:hover,
 .header__element-title:focus {
-  color: #ab78ff;
+  color: $accent-color;
 }
 .header__line {
-  background-image: #0d101f;
+  background-image: $background-secondary;
   width: 100%;
   height: 6px;
   box-shadow: inset -2px -2px 3px rgba(35, 33, 58, 0.5),
@@ -110,15 +110,15 @@
   padding-left: 3px;
   width: 16px;
   height: 12px;
-  stroke: #d9d9d9;
+  stroke: $text-primary;
 }
 // .header__arrow:hover,
 // .header__arrow:focus {
-//   color: #ab78ff;
+//   color: $accent-color;
 // }
 .header__element-title:hover > .header__arrow,
 .header__element-title:focus > .header__arrow {
-  stroke: #ab78ff;
+  stroke: $accent-color;
 }
 .hidden {
   opacity: 0;
@@ -135,5 +135,5 @@
 }
 .header__slider-link:hover,
 .header__slider-link:focus {
-  color: #ab78ff;
+  color: $accent-color;
 }
