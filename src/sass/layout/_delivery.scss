@@ -78,7 +78,7 @@
   border-radius: 12px;
 }
 .pay__wrapper-calc {
-  width: 700px;
+  width: 584px;
 }
 .pay__wrapper-info {
   width: 487px;
@@ -136,21 +136,21 @@
 }
 .pay__calc-cost,
 .pay__calc-date,
-.pay__calc-first {
+.pay__cost {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
   color: #a3a3a3;
 }
-.pay__calc-cost,
-.pay__calc-date {
-  margin-bottom: 34px;
+
+.pay__calc-cost {
+  margin-right: 107px;
 }
 .pay__calc-date {
+  margin-right: 103px;
+}
+.pay__cost {
   margin-right: 34px;
-}
-.pay__calc-first {
-  margin-bottom: 48px;
 }
 .pay__calc-list {
   margin: 0;

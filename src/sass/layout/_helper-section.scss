@@ -230,18 +230,106 @@
     -14px -28px 30px rgba(35, 33, 58, 0.15), 14px 28px 30px rgba(4, 5, 14, 0.3),
     -6px -6px 30px rgba(35, 33, 58, 0.15), 6px 6px 30px rgba(0, 2, 12, 0.3);
 }
-.custom-select {
+// .custom-select {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   width: 178px;
+//   // height: 60px;
+// }
+// .custom-select select {
+//   display: none;
+// }
+// .select-selected {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   width: 160px;
+//   height: 60px;
+//   background-color: #0b0d19;
+//   box-shadow: -10px -10px 30px rgba(35, 33, 58, 0.35),
+//     10px 10px 30px rgba(4, 5, 14, 0.55),
+//     inset -5px -6px 20px rgba(35, 33, 58, 0.3),
+//     inset 5px 6px 20px rgba(0, 2, 12, 0.5);
+//   border-radius: 34px;
+// }
+// .select-selected::after {
+//   content: "";
+//   position: absolute;
+//   top: 15px;
+//   left: 95px;
+//   height: 36px;
+//   width: 2px;
+//   background-image: url(../images/logo/divider.svg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   box-shadow: -1px -2px 4px rgba(35, 33, 58, 0.6),
+//     1px 2px 4px rgba(4, 5, 14, 0.8);
+// }
+// .selected-title::after {
+//   position: absolute;
+//   content: "";
+//   top: 14px;
+//   right: 10px;
+//   width: 0;
+//   height: 0;
+//   border: 6px solid transparent;
+//   border-color: #fff transparent transparent transparent;
+// }
+// .select-selected.select-arrow-active:after {
+//   border-color: transparent transparent #fff transparent;
+// }
+// .select-items div,
+// .select-selected {
+//   color: #ab78ff;
+//   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+//   cursor: pointer;
+// }
+// .select-items {
+//   position: absolute;
+//   background-color: DodgerBlue;
+//   top: 100%;
+//   left: 0;
+//   right: 0;
+//   z-index: 99;
+// }
+// .select-hide {
+//   display: none;
+// }
+// .select-items div:hover,
+// .same-as-selected {
+//   background-color: rgba(0, 0, 0, 0.1);
+// }
+// .select-form__wrapper {
+//   display: flex;
+//   align-items: center;
+// }
+.select-wrapper {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  align-items: baseline;
+}
+.select-wrapper:not(:last-child) {
+  margin-bottom: 48px;
+}
+.pay-fake-select-title {
+  position: relative;
+  padding-left: 34px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ab78ff;
+}
+.pay-fake-select-symbol {
+  padding-left: 50px;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
   align-items: center;
-  width: 178px;
-  // height: 60px;
+  color: #a3a3a3;
 }
-.custom-select select {
-  display: none;
-}
-.select-selected {
+.pay-fake-select {
   position: relative;
   display: flex;
   align-items: center;
@@ -254,11 +342,11 @@
     inset 5px 6px 20px rgba(0, 2, 12, 0.5);
   border-radius: 34px;
 }
-.select-selected::after {
+.pay-fake-select::after {
   content: "";
   position: absolute;
   top: 15px;
-  left: 95px;
+  left: 85px;
   height: 36px;
   width: 2px;
   background-image: url(../images/logo/divider.svg);
@@ -268,41 +356,69 @@
   box-shadow: -1px -2px 4px rgba(35, 33, 58, 0.6),
     1px 2px 4px rgba(4, 5, 14, 0.8);
 }
-.selected-title::after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-}
-.select-items div,
-.select-selected {
+.input-cost {
+  position: relative;
+  padding-left: 34px;
+  width: 142px;
+  height: 60px;
+  border: none;
+  background: #0b0d19;
   color: #ab78ff;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
+  font-size: 14px;
+  line-height: 22px;
+  box-shadow: -10px -10px 30px rgba(35, 33, 58, 0.35),
+    10px 10px 30px rgba(4, 5, 14, 0.55),
+    inset -5px -6px 20px rgba(35, 33, 58, 0.3),
+    inset 5px 6px 20px rgba(0, 2, 12, 0.5);
+  border-radius: 34px;
+  outline: none;
 }
-.select-items {
+.input-cost:placeholder-shown {
+  padding-left: 34px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.select-input-wrapper::before {
+  content: "";
   position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
+  z-index: 100;
+  top: 15px;
+  left: 340px;
+  height: 36px;
+  width: 2px;
+  background-image: url(../images/logo/divider.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: -1px -2px 4px rgba(35, 33, 58, 0.6),
+    1px 2px 4px rgba(4, 5, 14, 0.8);
+}
+
+.pay-symbol {
+  position: absolute;
+  top: 0;
   left: 0;
-  right: 0;
-  z-index: 99;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a3a3a3;
 }
-.select-hide {
-  display: none;
+.pay-fake-select-title::after {
+  position: absolute;
+  top: 9px;
+  left: 60px;
+  content: "";
+  width: 8px;
+  height: 4px;
+  background-image: url(../images/logo/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.select-form__wrapper {
-  display: flex;
-  align-items: center;
+.symbol-rub {
+  position: absolute;
+  top: 20px;
+  left: 355px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #a3a3a3;
 }

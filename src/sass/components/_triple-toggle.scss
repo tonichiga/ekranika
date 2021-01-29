@@ -95,32 +95,39 @@
 .switch {
   position: relative;
   margin: 20px auto;
-  height: 26px;
-  width: 120px;
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  height: 62px;
+  width: 514px;
+  background: #0b0d19;
+  box-shadow: -10px -10px 30px rgba(35, 33, 58, 0.35),
+    10px 10px 30px rgba(4, 5, 14, 0.55),
+    inset -5px -6px 20px rgba(35, 33, 58, 0.3),
+    inset 5px 6px 20px rgba(0, 2, 12, 0.5);
+  border-radius: 100px;
 }
 .switch-label {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
   float: left;
-  width: 58px;
-  line-height: 26px;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.35);
-  text-align: center;
+  width: 197px;
+  height: 54px;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ab78ff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
   cursor: pointer;
 }
 .switch-input:checked + .switch-label {
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.65);
+  animation: toggleAnimation;
+  animation-duration: 250ms;
+  font-weight: 700;
   text-shadow: 0 1px rgba(255, 255, 255, 0.25);
-  -webkit-transition: 0.15s ease-out;
-  -moz-transition: 0.15s ease-out;
-  -o-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
+  -webkit-transition: 0.15s ease-in-out;
+  -moz-transition: 0.15s ease-in-out;
+  -o-transition: 0.15s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 .switch-selection {
   display: block;
@@ -128,17 +135,45 @@
   z-index: 1;
   top: 2px;
   left: 2px;
-  width: 58px;
-  height: 22px;
-  background: #65bd63;
-  border-radius: 3px;
-  background-image: linear-gradient(to bottom, #9dd993, #65bd63);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
-  transition: left 0.15s ease-out;
+  width: 197px;
+  height: 54px;
+  background: #0d101f;
+  border: 1px solid #0d101f;
+  box-sizing: border-box;
+  box-shadow: -10px -10px 30px rgba(35, 33, 58, 0.16),
+    10px 10px 30px rgba(4, 5, 14, 0.8), inset 5px 6px 20px rgba(35, 33, 58, 0.5),
+    inset -5px -6px 20px rgba(0, 2, 12, 0.2);
+  border-radius: 34px;
+  transition: left 0.15s ease-in-out;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 60px;
+  width: 120px;
+  left: 197px;
 }
+.switch-input:checked + .switch-label-na ~ .switch-selection {
+  left: 320px;
+}
+
 .switch-input {
   display: none;
+}
+.switch-label.switch-label-on {
+  width: 120px;
+}
+@keyframes toggleAnimation {
+  0% {
+    left: 0;
+  }
+  30% {
+    opacity: 0.5;
+    left: 100px;
+  }
+  60% {
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
 }

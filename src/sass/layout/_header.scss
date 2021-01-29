@@ -23,7 +23,7 @@
 .logo-wrapper {
   display: flex;
   align-items: center;
-  margin-right: 118px;
+  // margin-right: 118px;
 }
 .header__list {
   display: flex;
@@ -39,7 +39,7 @@
   margin-right: 20px;
 }
 .header {
-  margin-right: 225px;
+  // margin-right: 225px;
 }
 .nav-btn {
   display: flex;
@@ -59,6 +59,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  cursor: pointer;
   background-image: linear-gradient(343.22deg, #181932 -36.39%, #0f111e 72.73%);
   box-shadow: -14px -28px 30px rgba(35, 33, 58, 0.35),
     14px 28px 30px rgba(4, 5, 14, 0.3);
@@ -70,6 +71,7 @@
   color: #ab78ff;
   width: 189px;
   height: 48px;
+  cursor: pointer;
   background: linear-gradient(343.22deg, #181932 -36.39%, #0f111e 72.73%);
   /* Button/1 */
 

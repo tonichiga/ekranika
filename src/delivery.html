@@ -315,7 +315,7 @@
                     checked=""
                   />
                   <label for="week" class="switch-label switch-label-off"
-                    >Week</label
+                    >Рамно-монолитная</label
                   >
                   <input
                     type="radio"
@@ -325,17 +325,17 @@
                     id="month"
                   />
                   <label for="month" class="switch-label switch-label-on"
-                    >Month</label
+                    >Кабинет</label
                   >
                   <input
                     type="radio"
                     class="switch-input"
                     name="view"
-                    value="month"
-                    id="month"
+                    value="years"
+                    id="years"
                   />
-                  <label for="month" class="switch-label switch-label-na"
-                    >Years</label
+                  <label for="years" class="switch-label switch-label-na"
+                    >Транспортный кофр</label
                   >
                   <span class="switch-selection"></span>
                 </div>
@@ -366,11 +366,36 @@
             </div>
             <div class="pay__wrapper-calc">
               <h2 class="pay__calc-title">Калькулятор рассрочки</h2>
-              <input type="text" id="cost" placeholder="1 500 000" />
-              <label for="cost" class="pay__calc-cost"
-                >Стоимость оборудования</label
-              >
-              <div class="select-form__wrapper">
+              <div class="select-wrapper">
+                <label for="cost" class="pay__cost"
+                  >Стоимость оборудования</label
+                >
+                <div class="select-input-wrapper">
+                  <input
+                    class="input-cost"
+                    type="text"
+                    id="cost"
+                    placeholder="1 500 000"
+                  />
+                  <span class="symbol-rub">₽</span>
+                </div>
+              </div>
+              <div class="select-wrapper">
+                <p class="pay__calc-date">Срок рассрочки</p>
+                <span class="pay-fake-select">
+                  <span class="pay-fake-select-title">24</span>
+                  <span class="pay-fake-select-symbol">мес</span>
+                </span>
+              </div>
+              <div class="select-wrapper">
+                <p class="pay__calc-cost">Первый платёж</p>
+                <span class="pay-fake-select">
+                  <span class="pay-fake-select-title">30</span>
+                  <span class="pay-fake-select-symbol">%</span>
+                </span>
+              </div>
+              <!-- <p class="pay__calc-first">Первый расчет</p> -->
+              <!-- <div class="select-form__wrapper">
                 <p class="pay__calc-date">Срок рассрочки</p>
                 <div class="custom-select">
                   <select>
@@ -380,24 +405,24 @@
                     <option value="4">12</option>
                     <option value="5">6</option>
                   </select>
-                  <!-- <div class="select-selected select-arrow-active">36</div> -->
-                  <!-- <div class="select-items select-hide">
+                  <div class="select-selected select-arrow-active">36</div>
+                  <div class="select-items select-hide">
                     <div>36</div>
                     <div>24</div>
                     <div>12</div>
                     <div>6</div>
-                  </div> -->
+                  </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="form-radio-btn percent">
+              <!-- <div class="form-radio-btn percent">
                 <p class="pay__calc-first">Первый расчет</p>
                 <select>
                   <option value="0">30%</option>
                   <option value="1">50%</option>
                   <option value="2">70%</option>
                 </select>
-              </div>
+              </div> -->
               <!-- <ul class="pay__calc-list">
                 <li class="pay__calc-element">
                   <span class="pay__calc-element-title">24</span>
