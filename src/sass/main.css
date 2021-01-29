@@ -1168,6 +1168,7 @@ a {
 
 .pay__download-title {
   position: relative;
+  display: block;
   padding-left: 40px;
   margin-top: 0;
   margin-bottom: 25px;
@@ -1266,7 +1267,6 @@ a {
   display: flex;
   margin-bottom: 34px;
   height: 12px;
-  width: 584px;
   background-color: #0b0d19;
   box-shadow: inset -2px -2px 5px rgba(52, 40, 62, 0.3), inset 2px 2px 5px rgba(0, 2, 12, 0.8), -20px -27px 40px rgba(35, 33, 58, 0.35), 20px 27px 40px rgba(4, 5, 14, 0.17);
 }

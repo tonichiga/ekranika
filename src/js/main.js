@@ -45,7 +45,7 @@ function onShowOffers(e) {
 refs.deliveryLink.addEventListener("click", onDeliveryPage);
 function onDeliveryPage(e) {
   if (e.target.classList.contains("delivery")) {
-    document.location.href = "delivery.html";
+    document.location.href = "./delivery.html";
   }
 }
 refs.checkbox.addEventListener("click", onChecked);
