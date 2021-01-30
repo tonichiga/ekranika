@@ -1,3 +1,10 @@
+import deliveryLink from "../delivery-test.html";
+import main from "../main-test.html";
+history.pushState(null, null, "/main");
+if (location.pathname === "/main") {
+  document.body.insertAdjacentHTML("beforeend", main);
+}
+
 const refs = {
   offers: document.querySelector(".header__list"),
   offersSlider: document.querySelector(".header__slider.offer"),
@@ -41,14 +48,22 @@ function onShowOffers(e) {
     refs.contactArrow.classList.toggle("hidden");
   }
 }
-
+console.log(window.location);
 refs.deliveryLink.addEventListener("click", onDeliveryPage);
 function onDeliveryPage(e) {
+  // if (e.target.classList.contains("delivery")) {
+  //   document.location.href = __dirname + "../delivery.html";
+  // }
   if (e.target.classList.contains("delivery")) {
-    document.location.href = "./delivery.html";
+    e.preventDefault();
+    history.pushState(null, null, "/delivery");
+    if (location.pathname === "/delivery") {
+      document.body.innerHTML = deliveryLink;
+      const checkbox = document.querySelector("#helper__form-checkbox");
+      checkbox.addEventListener("click", onChecked);
+      function onChecked(e) {
+        checkbox.classList.toggle("checked");
+      }
+    }
   }
-}
-refs.checkbox.addEventListener("click", onChecked);
-function onChecked(e) {
-  refs.checkbox.classList.toggle("checked");
 }

@@ -910,7 +910,7 @@ a {
 #tel {
   padding-left: 92px;
   color: #a3a3a3;
-  width: 622px;
+  width: 528px;
   height: 80px;
   border: none;
   font-size: 24px;
@@ -1118,19 +1118,19 @@ a {
   align-items: baseline;
   padding-top: 96px;
   padding-bottom: 96px;
-  padding-left: 192px;
-  padding-right: 192px;
+  padding-left: 150px;
+  padding-right: 150px;
   background-color: #0b0d19;
   box-shadow: -14px -14px 30px rgba(35, 33, 58, 0.35), 16px 5px 40px rgba(4, 5, 14, 0.6);
   border-radius: 12px;
 }
 
 .pay__wrapper-calc {
-  width: 584px;
+  width: 520px;
 }
 
 .pay__wrapper-info {
-  width: 487px;
+  width: 520px;
   margin-right: 137px;
 }
 
