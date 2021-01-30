@@ -1,19 +1,5 @@
 import delivery from "../delivery-test.html";
-import main from "../main-test.html";
-// history.pushState(null, null, "/main");
-if (location.pathname === "/main") {
-  document.body.insertAdjacentHTML("beforeend", main);
-}
 
-if (location.pathname === "/delivery") {
-  const header = document.querySelector("header");
-  const main = document.querySelector("main");
-  const footer = document.querySelector("footer");
-
-  document.body.innerHTML = "";
-
-  document.body.insertAdjacentHTML("beforeend", delivery);
-}
 const refs = {
   offers: document.querySelector(".header__list"),
   offersSlider: document.querySelector(".header__slider.offer"),
@@ -26,19 +12,21 @@ const refs = {
   contactArrow: document.querySelector(".header__arrow.contact"),
   deliveryLink: document.querySelector(".header__slider-title.delivery"),
   checkbox: document.querySelector("#helper__form-checkbox"),
+  header: document.querySelector(".header"),
+  main: document.querySelector(".main"),
+  footer: document.querySelector(".footer"),
 };
-refs.offers.addEventListener("click", onShowOffers);
+
 function onShowOffers(e) {
   e.preventDefault();
-  console.log();
-
+  console.log(e);
   if (e.target.classList.contains("offer")) {
     refs.offersSlider.classList.toggle("is-open");
     refs.offersArrow.classList.toggle("hidden");
   }
   if (e.target.classList.contains("about-us")) {
     refs.aboutUsSlider.classList.toggle("is-open");
-    refs.aboutUsSlider.classList.toggle("hidden");
+    refs.aboutUsArrow.classList.toggle("hidden");
   }
   if (e.target.classList.contains("pay")) {
     refs.aboutUsSlider.classList.toggle("is-open");
@@ -56,21 +44,27 @@ function onShowOffers(e) {
     refs.offersSlider.classList.toggle("is-open");
     refs.contactArrow.classList.toggle("hidden");
   }
+}
+console.log(refs.deliveryLink);
+export default function showSliderDelivery() {
   refs.deliveryLink.addEventListener("click", onDeliveryPage);
   function onDeliveryPage(e) {
-    // if (e.target.classList.contains("delivery")) {
-    //   document.location.href = __dirname + "../delivery.html";
-    // }
+    console.log(e);
     if (e.target.classList.contains("delivery")) {
       e.preventDefault();
+      refs.header.remove();
+      refs.main.remove();
+      refs.footer.remove();
       history.pushState(null, null, "/delivery");
+
       if (location.pathname === "/delivery") {
-        const header = document.querySelector("header");
-        const main = document.querySelector("main");
-        const footer = document.querySelector("footer");
-        document.body.innerHTML = "";
         document.body.insertAdjacentHTML("beforeend", delivery);
-        location.reload();
+        console.log(delivery.body);
+        const offers = document.querySelector(".header__list");
+
+        offers.addEventListener("click", (e) => {
+          console.log(e);
+        });
         const checkbox = document.querySelector("#helper__form-checkbox");
         checkbox.addEventListener("click", onChecked);
         function onChecked(e) {
@@ -80,3 +74,4 @@ function onShowOffers(e) {
     }
   }
 }
+showSliderDelivery();
