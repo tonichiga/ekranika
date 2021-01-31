@@ -49,11 +49,24 @@ module.exports = (env) => ({
         useShortDoctype: true,
       },
     }),
+    new HtmlWebpackPlugin({
+      template: "./delivery.html",
+      minify: {
+        collapseWhitespace: true,
+        removeComments: true,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
+      filename: "delivery.html",
+    }),
 
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash].css",
       chunkFilename: "[name].[id].[contenthash].css",
     }),
+
     new OptimizeCssAssetsPlugin({}),
   ],
 });

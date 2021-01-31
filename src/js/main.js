@@ -1,19 +1,22 @@
 import delivery from "../delivery-test.html";
 import main from "../main-test.html";
-// history.pushState(null, null, "/main");
-if (location.pathname === "/main") {
-  document.body.insertAdjacentHTML("beforeend", main);
-}
 
-if (location.pathname === "/delivery") {
-  const header = document.querySelector("header");
-  const main = document.querySelector("main");
-  const footer = document.querySelector("footer");
+// if (location.pathname === "/ekranika/delivery") {
+//   const header = document.querySelector("header");
+//   const main = document.querySelector("main");
+//   const footer = document.querySelector("footer");
 
-  document.body.innerHTML = "";
+//   document.body.innerHTML = "";
 
-  document.body.insertAdjacentHTML("beforeend", delivery);
-}
+//   document.body.insertAdjacentHTML("beforeend", delivery);
+//   const checkbox = document.querySelector("#helper__form-checkbox");
+//   console.log(checkbox);
+//   checkbox.addEventListener("click", onChecked);
+//   function onChecked(e) {
+//     console.log(e);
+//     checkbox.classList.toggle("checked");
+//   }
+// }
 const refs = {
   offers: document.querySelector(".header__list"),
   offersSlider: document.querySelector(".header__slider.offer"),
@@ -58,25 +61,35 @@ function onShowOffers(e) {
   }
   refs.deliveryLink.addEventListener("click", onDeliveryPage);
   function onDeliveryPage(e) {
-    // if (e.target.classList.contains("delivery")) {
-    //   document.location.href = __dirname + "../delivery.html";
-    // }
     if (e.target.classList.contains("delivery")) {
-      e.preventDefault();
-      history.pushState(null, null, "/delivery");
-      if (location.pathname === "/delivery") {
-        const header = document.querySelector("header");
-        const main = document.querySelector("main");
-        const footer = document.querySelector("footer");
-        document.body.innerHTML = "";
-        document.body.insertAdjacentHTML("beforeend", delivery);
-        location.reload();
-        const checkbox = document.querySelector("#helper__form-checkbox");
-        checkbox.addEventListener("click", onChecked);
-        function onChecked(e) {
-          checkbox.classList.toggle("checked");
-        }
+      // e.preventDefault();
+      // history.pushState(pushObj, "ekranika", "/ekranika/delivery");
+      // if (location.pathname === "ekranika/delivery") {
+      const header = document.querySelector("header");
+      const main = document.querySelector("main");
+      const footer = document.querySelector("footer");
+      // refs.deliveryLink.pathname = "/delivery.html";
+      // location.href = refs.deliveryLink;
+      // document.body.innerHTML = "";
+      // document.body.insertAdjacentHTML("beforeend", delivery);
+      const checkbox = document.querySelector("#helper__form-checkbox");
+
+      checkbox.addEventListener("click", onChecked);
+      function onChecked(e) {
+        console.log(e);
+        checkbox.classList.toggle("checked");
       }
     }
+  }
+}
+
+console.log("update-9");
+if (location.pathname === "/ekranika/delivery.html") {
+  const checkbox = document.querySelector("#helper__form-checkbox");
+
+  checkbox.addEventListener("click", onChecked);
+  function onChecked(e) {
+    console.log(e);
+    checkbox.classList.toggle("checked");
   }
 }
